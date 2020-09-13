@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@700&display=swap');
+
+/* CSS RESET */
+*{
+  margin:0;
+  padding:0;
+  border:none;
+  outline:nose;
+  box-sizing:border-box;
+  color:#312a26;
+}
+
+h1,h2,h3,h4,h5,h6 {
+ font-family: 'Oswald', san-serif;
+}
+
+p,
+input,
+label,
+span,
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* hedaer area */
+.nav{
+  overflow: auto;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nav h1 {
+  width: 50%;
+  float:left;
+}
+
+.nav a {
+  font-family: 'Oswald', san-serif;
+  color: #312A26;
+  text-decoration:none;
+
+}
+
+.nav ul{
+  width: 50%;
+  float:left;
+  text-align:right;
+  padding-top:10px;
+}
+
+
+
+.nav li {
+  display: inline-block;
+}
+
+a:hover{
+  color: #c7a17a;
+}
+
+/* banner area */
+.banner {
+  height: 650px;
+  background-image: url(../images/atf-image.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom:5%;
+}
+
+.banner-text {
+ width:30%;
+ position: relative;
+ top: 20%;
+ left:7.5%;
+}
+
+.banner-text h2 {
+  font-size:75px;
+  line-height:75px;
+  text-transform: uppercase;
+}
+
+.banner-text p {
+  font-style:italic;
+  margin-bottom:15px;
+}
+
+.banner-text a {
+  color:#ffff;
+  background-color: #312a26;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px 20px;
+}
+
+.banner span{
+  font-family:'Oswald', sans-serif;
+  color: #4caf50;
+}
+
+/* ads area */
+.ads {
+  overflow:auto;
+  width:85%;
+  margin-right:auto;
+  margin-left:auto;
+  margin-bottom:5%;
+}
+
+.ads-box{
+  width:49.5%;
+  float:left;
+  height:350px;
+  position:relative;
+  background-color:#312a26;
+  margin-right:1%;
+  background-size:cover;
+  background-position:center;
+}
+
+/* pseudo selector-selecting a specific child of your parent */
+.ads .ads-box:nth-child(2){
+  margin-right:0;
+}
+
+.ads .ads-box:nth-child(1){
+  background-image: url(../images/merchandise1.jpg);
+}
+
+.ads .ads-box:nth-child(2){
+  background-image: url(../images/merchandise2.jpg);
+}
+
+.ads-text{
+  position:absolute;
+  left:10%;
+  top: 30%; 
+}
+
+.ads-text h3{
+  color:#ffffff;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-bottom: 20px;   
+  line-height:35px;
+}
+
+.ads-text a {
+  color:#ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* merchandice ares */
+
+.merch{
+  margin-bottom:5%;
+  width:85%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.div-title{
+  text-align: center;
+  margin-bottom:5%;
+}
+
+.div-title span{
+  font-style: italic;
+  color: #c7a17a;
+  font-size:20px;
+}
+
+.div-title h2{
+  text-transform: uppercase;
+  font-size:40px;
+  margin-bottom:20px;
+}
+
+.div-title hr{
+  background-color: #c7a17a;
+  height: 4px;
+  width:10%;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.merch-gallery{
+  overflow:auto;
+}
+
+.merch-item{
+  width:24.25%;
+  float:left;
+  margin-right:1%;
+}
+
+/* psudo selector */
+.merch-gallery .merch-item:nth-child(4),
+.merch-gallery .merch-item:nth-child(8){
+  margin-right: 0%;
+}
+.merch-gallery .merch-item:nth-child(5),
+.merch-gallery .merch-item:nth-child(6),
+.merch-gallery .merch-item:nth-child(7),
+.merch-gallery .merch-item:nth-child(8) {
+  margin-top:1%;
+}
+
+
+/* or use this 
+.merch-gallery .merch-item.nth-child(1),
+.merch-gallery .merch-item.nth-child(2),
+.merch-gallery .merch-item.nth-child(3),
+.erch-gallery .merch-item.nth-child(4),{
+  marign-top:1%;  */
+
+
+.merch-item img{
+  width:100%;
+}
+
+.merch-item span{
+  color:#c7a17a;
+}
+
+.merch-item p{
+  color:#c7a17a;
+}
+
+/* ads big area */
+.ads-big{
+  height:400px;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  width:85%;
+  margin-right:auto;
+  margin-left:auto;
+  position:relative;
+  margin-bottom:5%;
+}
+
+.ads-big-text{
+  width:50%;
+  text-align:center;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+
+.ads-big-text span{
+  color:#c7a17a;
+  font-style:italic;
+}
+
+.ads-big-text h2{
+  text-transform: uppercase;
+  color:white;
+  font-size: 40px;
+  margin-bottom:20px;
+  line-height:45px;
+}
+
+.ads-big-text a {
+ background-color:#ffffff;
+ color:#312a26;
+ text-decoration:none;
+ padding: 15px 20px;
+ font-weight:700;
+}
+
+/* ads area2 */
+.ads2 .ads-box:nth-child(1){
+  background-image:url(../images/merchandise3.jpg)
+}
+
+.ads2 .ads-box:nth-child(2){
+  background-image:url(../images/merchandise4.jpg)
+}
+
+.ads2 .ads-box:nth-child(4){
+  margin-right:0;
+}
+
+.ads2 .ads-box:nth-child(1),
+.ads2 .ads-box:nth-child(2){
+  margin-bottom:1%;
+}
+
+.ads2 .ads-box:nth-child(3){
+  background-image:url(../images/merchandise5.jpg)
+}
+
+.ads2 .ads-box:nth-child(4){
+  background-image:url(../images/merchandise6.jpg)
+}
+
+/* res. area */
+
+.reservation{
+  overflow: auto;
+  width: 85%;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.res-form-left{
+  margin-right:1%;
+  height:599px
+}
+
+.res-form{
+  overflow:auto;
+}
+
+.res-form-left,
+.res-form-right{
+  width: 49.5%;
+  float: left;
+  background-color: #f2f2f2;
+  padding:2%;
+  border-radius:5px;
+}
+
+
+
+.res-form label,
+.res-form input,
+.res-form textarea,
+.res-form select{
+ 
+  display: block;
+  width: 100%;
+  font-family:'open sans', sans-serif;
+
+}
+
+.res-form input,
+.res-form textarea, 
+.res-form select{
+  padding: 10px;
+  margin-bottom:10px;
+}
+
+.res-form label{
+  font-weight: 700;
+}
+
+input.form-inline,
+label.form-inline{
+  display:inline;
+  width:auto;
+}
+
+.subtitle{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+input.check-inline,
+label.check-inline{
+  display:inline;
+  width:auto;
+}
+
+input.btn{
+  color:#ffffff;
+  background-color: #4caf50;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* fotter area 1 */
+
+.footer{
+  background-image:url(../images/footer-image.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-content{
+  overflow:auto;
+  width:85%;
+  margin-right:auto;
+  margin-left:auto;
+
+}
+
+.footer-content h3{
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer-content th,
+.footer-content td{
+  color: #ffffff;
+  font-family: "open sans", sans-serif;
+}
+
+.footer-content>div{
+  width:24.25%;
+  float:left;
+  margin-right:1%;
+}
+
+/* pseudo selector */
+.footer-content>div:nth-child(4){
+  margin-right:0;
+}
+
+.latest-post h4{
+  color:#ffffff;
+  text-transform: uppercase;
+}
+
+.latest-post p {
+  color:#c7a17a;
+}
+
+.contact p{
+  color:#ffffff;
+  font-weight:700;
+}
+
+.contact .hight-light{
+  color:#c7a17a;
+  font-weight:700;
+  margin-top:15px;
+}
+
+.contact input{
+  background-color:#ffffff;
+  padding: 10px;
+}
+
+.contact input[type="submit"]{
+  background-color: #c7a17a;
+}
+
+.title-2{
+  margin-top:15px;
+}
+
+.location h4{
+  color:#c7a17a;
+  text-transform: uppercase;
+  margin-top:15px;
+}
+
+.location p{
+  color:#ffffff;
+  font-weight:700;
+}
+
+/* footer2 */
+.footer2{
+  background-color:#000000;
+  padding-top:2.5%;
+  padding-bottom:2.5%;
+}
+
+.footer2 p,
+.footer2 a,
+.footer2 h3 {
+  color:#ffffff;
+}
+
+.footer2 li{
+  display:inline-block;
+}
+
+.footer2 .social{
+  text-align:center;
+  width:49.5%;
+}
+
+.footer2 .copy-right{
+ margin-right:0;
+}
+
+@media screen and (maz-width: 768px)
+/* if the screen size is 0px to 768px, it will show all these css */
+
+.ads-box{
+  width:100%
+}
+
+.merch-item{
+  width:100%
+}
+
+.nav ul{
+  display: none;
+}
+
+.footer-content >div {
+  width: 100%;
+}
+
+body{
+background-color:aqua;
+}
